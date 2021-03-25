@@ -2,6 +2,8 @@
     --white-color: #fff;
     --black-color: #140a00;
     --red-color: #FF0000;
+    --default-margin: 10px;
+    --default-padding: 5px;
 }
 
 *{margin: 0; padding: 0;}
@@ -9,7 +11,7 @@
 header {
     display : flex;
     justify-content: space-between;
-    margin: 10px; padding: 5px;
+    margin: var(--default-margin); padding: var(--default-padding);
     background-color: var(--white-black);
 }
 
@@ -58,6 +60,7 @@ ul > li {
 }
 
 .player {
+    margin: var(--default-margin); padding: var(--default-padding);
     text-align: center;
 }
 .player {
@@ -67,7 +70,39 @@ ul > li {
 }
 
 .info .hashtags{
+    margin: var(--default-margin); padding: var(--default-padding);
+    margin-bottom: 0;
+    padding-bottom: 0;
     display: flex;
     font-size: 0.5em;
     color: lightblue;
+}
+
+.videotitle {
+    margin: var(--default-margin); padding: var(--default-padding);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.action {
+    margin: var(--default-margin); padding: var(--default-padding);
+    display: flex;
+    justify-content: space-around;
+}
+
+.action .youtubebutton {
+    border: 0;
+    outline: 0;
+    background-color: var(--white-color);
+    font-size: 0.8em;
+}
+
+.action .youtubebutton:hover{
+    background-color: lightgray;
+}
+
+.one {
+    width: 100%;
+    color: lightgrey;
+    text-align: center;
 }
