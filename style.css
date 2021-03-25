@@ -49,3 +49,12 @@ header .login #loginbutton {
 header .login #loginbutton:hover{
     background-color: lightgray;
 }
+
+.player {
+    text-align: center;
+}
+.player {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
