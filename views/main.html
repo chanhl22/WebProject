@@ -8,7 +8,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>YouTube</title>
 </head>
 <body>
@@ -20,15 +20,17 @@
         </div>
         <div class="searchbar">
             <input type="text">
-            <input type="submit" value="&#xf002;">
+            <input type="image" id="search" src="../image/search.jpeg" alt="검색버튼">
         </div>
         <div class="login">
             <button id="loginbutton">로그인</button>
         </div>
     </header>
     <!--비디오-->
-    <section class="player">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v7bnOxV4jAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="play">
+        <div class ="player">
+            <iframe class="video" src="https://www.youtube.com/embed/v7bnOxV4jAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
     <!--비디오에 대한 정보-->
     <section class="info">
@@ -40,48 +42,50 @@
             </ul>
         </div>
         <div class="title">
-            <span class="videotitle">[playlist] 라일락</span>
+            <span class="videotitle">[MV] IU(아이유)_LILAC(라일락)</span>
         </div>
-        <div class="action">
-            <ul class="actionbutton">
-                <li><button class="youtubebutton"><span>좋아요</span></button></li>
-                <li><button class="youtubebutton"><span>싫어요</span></button></li>
-                <li><button class="youtubebutton"><span>공유</span></button></li>
-                <li><button class="youtubebutton"><span>저장</span></button></li>
-                <li><button class="youtubebutton"><span>...</span></button></li>
-            </ul>
-        </div>
-        <hr class="one"> 
+        <ul class="actions">
+            <li><button><span>좋아요</span></button></li>
+            <li><button><span>싫어요</span></button></li>
+            <li><button><span>공유</span></button></li>
+            <li><button><span>저장</span></button></li>
+            <li><button><span>...</span></button></li>
+        </ul>
+        <hr class="one">
         <div class="channel">
-            <div class="channelimg">
-                <img src="" alt="">
+            <div class="metadata">
+                <img src="../image/main.jpg" alt="">
+                <div class="channeltitle">
+                    <span class="name">듣고 싶은 노래</span>
+                    <span class="subscribe">1M subcribers</span>
+                </div>
             </div>
-            <div class="channeltitle">
-                <span class="name">듣고 싶은 노래</span>
-                <span class="subscribe">1M subcribers</span>
-            </div>
+            <button class="subscribebutton">구  독</button>
         </div>
     </section>
+    <hr class="one">
     <!--다음 비디오-->
     <section class="next">
-        <ul>
+        <ul class ="items">
             <li class="item">
-                <img src="" alt="">
-                <div class="nextinfo">
-                    <span class="nexttitlename">playlist1</span>
-                    <span class="nextname">듣고 싶은 노래</span>
-                    <span class="nextview">조회수 6.5만회</span>
+                <img src="../image/next1.jpg" alt="">
+                <div class="nextinfodata">
+                    <div class="nextinfo">
+                        <span class="nexttitlename">playlist1</span>
+                        <span class="nextname">듣고 싶은 노래</span>
+                        <span class="nextview">조회수 6.5만회</span>
+                    </div>
                 </div>
-                <button class="morebutton"></button>
             </li>
             <li class="item">
-                <img src="" alt="">
-                <div class="nextinfo">
-                    <span class="nexttitlename">playlist2</span>
-                    <span class="nextname">듣고 싶은 노래</span>
-                    <span class="nextview">조회수 5.8만회</span>
+                <img src="../image/next2.jpg" alt="">
+                <div class="nextinfodata">
+                    <div class="nextinfo">
+                        <span class="nexttitlename">playlist2</span>
+                        <span class="nextname">듣고 싶은 노래</span>
+                        <span class="nextview">조회수 5.8만회</span>
+                    </div>
                 </div>
-                <button class="morebutton"></button>
             </li>
         </ul>
     </section>

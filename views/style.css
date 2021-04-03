@@ -1,0 +1,184 @@
+:root {
+    --white-color: #fff;
+    --black-color: #140a00;
+    --red-color: #FF0000;
+    --default-margin: 10px;
+    --default-padding: 5px;
+    --font-large: 24px;
+    --font-midium: 18px;
+    --font-midiumsmall: 14px;
+    --font-small: 10px;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/*헤더 스타일 시트*/
+header {
+    display : flex;
+    justify-content: space-between;
+    margin: var(--default-margin); padding: var(--default-padding);
+    background-color: var(--white-black);
+}
+
+header .logo i {
+    color: var(--red-color);
+}
+
+header .logo .title {
+    font-size: var(--font-midium);
+    font-weight: bold;
+}
+
+header .searchbar input{
+    border: 1px solid rgb(194, 193, 193);
+    vertical-align:top;
+}
+
+input[type="text"] {
+    width: 350px;
+    height: 25px; 
+}
+
+input[type="image"] {
+    width: 50px;
+    height: 25px;
+    margin-left: -7px;
+}
+
+header .login #loginbutton {
+    border: 0;
+    outline: 0;
+    background-color: var(--white-color);
+    font-size: var(--font-midium);
+    font-weight: bold;
+}
+
+header .login #loginbutton:hover{
+    background-color: lightgray;
+}
+
+/* 동영상 정보 */
+ul {
+    list-style: none;
+}
+
+ul > li {
+    margin-right: 5px;
+}
+
+.play {
+    margin: var(--default-margin); padding: var(--default-padding);
+}
+
+.play .player{
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;
+}
+
+.player .video{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.info .hashtags{
+    margin: var(--default-margin); padding: var(--default-padding);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    font-size: var(--font-small);
+    color:rgb(127, 127, 243);
+}
+
+.videotitle {
+    margin: var(--default-margin); padding: var(--default-padding);
+    font-size: var(--font-large);
+    font-weight: bold;
+}
+
+.actions {
+    margin: var(--default-margin); padding: var(--default-padding);
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions button {
+    border: 0;
+    outline: 0;
+    background-color: var(--white-color);
+    font-size: var(--font-midiumsmall);
+}
+
+.actions button:hover{
+    color: lightskyblue;
+}
+
+.one {
+    margin: var(--default-margin);
+    width: 100%;
+    color: lightgrey;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.channel {
+    margin: var(--default-margin); padding: var(--default-padding);
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel .metadata {
+    display: flex;
+    align-items: center;
+}
+
+.channel .metadata img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.channel .metadata .channeltitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel .metadata .channeltitle .name {
+    font-size: var(--font-midium);
+}
+
+.channel .metadata .channeltitle .subscribe {
+    font-size: var(--font-midiumsmall);
+}
+
+.channel .subscribebutton {
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+
+/*다음 비디오*/
+.next .item {
+    display: flex;
+}
+
+.next .item img{
+    width: 250px;
+    height: 130px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.next .item .nextinfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: var(--font-midiumsmall);
+}
+
+.next .item .nextinfo .nexttitlename{
+    font-size: var(--font-midium);
+    font-weight: bold;
+}
