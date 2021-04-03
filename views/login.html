@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/login.css">
     <title>Login</title>
 </head>
 <body>
     <form method="post">
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <button type="submit">Login</button>
-          <button type="submit">회원가입</button>
-        </div>
-      </form>
+      <div class="container">
+        <label for="join-email"><b>이메일</b></label>
+        <input type="join-email" placeholder="Enter Username" name="uname" required>
+    
+        <label for="join-password"><b>비밀번호</b></label>
+        <input type="join-password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit">Login</button>
+        <button type="submit" onclick="location.href='/join'">회원가입</button>
+      </div>
+    </form>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>

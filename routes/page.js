@@ -13,11 +13,15 @@ const router = express.Router();
 // });
 
 router.get('/profile', isLoggedIn, (req, res) => {
-  res.render('profile', { title: '내 정보 - NodeBird' });
+  res.render('profile', { title: '내 정보' });
+});
+
+router.get('/login', isNotLoggedIn, (req, res) => {
+  res.render('login', { title: '로그인' });
 });
 
 router.get('/join', isNotLoggedIn, (req, res) => {
-  res.render('join', { title: '회원가입 - NodeBird' });
+  res.render('join', { title: '회원가입' });
 });
 
 router.get('/', (req, res) => {

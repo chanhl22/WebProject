@@ -4,7 +4,7 @@ form {
 }
   
   /* Full-width inputs */
-  input[type=text], input[type=password] {
+  input[type=join-email], input[type=join-nick] ,input[type=join-password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -15,7 +15,7 @@ form {
   
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
+    background-color: rgb(235, 112, 112);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
